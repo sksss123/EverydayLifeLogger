@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="CategoryForType"
+        id="@+id/x">
+        <item>종류선택</item>
+        <item>공부</item>
+        <item>약속</item>
+        <item>여가</item>
+        <item>휴식</item>
+        <item>상황목격</item>
+    </string-array>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kr.ac.kookmin.everydaylifelogger.AddActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/mainText"
+        android:text="Add Log"
+        android:textSize = "12pt"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="180pt"
+        android:layout_below="@id/mainText"
+        class="com.google.android.gms.maps.MapFragment"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/map"
+        android:id="@+id/nowDate"
+        android:textSize = "12pt"/>
+
+    <Spinner
+        android:layout_width="50pt"
+        android:layout_height="10pt"
+        android:prompt="@string/type"
+        android:id="@+id/addTypeCategory"
+        android:layout_alignTop="@id/nowDate"
+        android:layout_alignParentEnd="true"
+        android:spinnerMode="dropdown"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventText"
+        android:layout_below="@id/nowDate"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/addFinish"
+        android:text="추가"
+        android:layout_below="@id/eventText"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/cancelAdd"
+        android:text="뒤로가기"
+        android:layout_toRightOf="@id/addFinish"
+        android:layout_alignTop="@id/addFinish"/>
+
+</RelativeLayout>

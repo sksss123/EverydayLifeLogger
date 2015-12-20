@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Everyday Life Logger</string>
+    <string name="type">종류별</string>
+    <string name="time">시간별</string>
+</resources>
